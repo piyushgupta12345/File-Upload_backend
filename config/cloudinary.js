@@ -11,6 +11,6 @@ exports.cloudinaryConnect = () => {
             cloud_secret: process.env.Cloud_SECRET
         })
     } catch (error) {
-        console.log(error);
+        console.log("Cloudinary: ",error);
     }
 }

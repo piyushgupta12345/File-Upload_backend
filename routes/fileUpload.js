@@ -2,10 +2,11 @@ const express = require("express");
 const router = express.Router();
 
 // import controllers files
-const {localfileUpload} = require("../controllers/Fileupload");
+const {localfileUpload, imageUpload} = require("../controllers/fileUpload");
 
 // define routes
 router.post('/localFileUpload', localfileUpload)
+router.post('/imageUpload', imageUpload)
 
 // export router
 module.exports = router;
